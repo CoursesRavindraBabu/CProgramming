@@ -1,3 +1,11 @@
+/*Calculate and print 
+        (i) n-th term of a arithmetic series and 
+        (ii) sum up to n-th term.
+        
+        input : first term, common difference, value of n
+        output: n<integer>-th term is: <term>
+                sum up to n<integer>-th term is: <sum>*/
+
 #include <stdio.h>
 int main(){
 	int a, d, n,nth_term;
