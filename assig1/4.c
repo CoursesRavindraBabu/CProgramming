@@ -14,7 +14,7 @@ int main(){
 	scanf("%d%d",&x3,&y3);
 	printf("Center of inner circle is: (%d,%d)\n",(x1+x2+x3)/3,(y1+y2+y3)/3);
 	side= sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2));
-	printf("The area of inner circle is:%f\n", (sqrt(3) * side)/6);
+	printf("The area of inner circle is:%f\n", (3.14 * pow(side, 2) / 12.0));
 	return 0;
 	// we didn't check if the cordinates form triangle please include that check also
 }
