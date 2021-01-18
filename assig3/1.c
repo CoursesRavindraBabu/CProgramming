@@ -1,19 +1,34 @@
 #include <stdio.h>
-int main(){
-	int rows, coef = 1, space, i, j;
-	printf("Enter number of rows: ");
-	scanf("%d",&rows);
-	for(i=0; i<rows; i++){
-		for(space=1; space <= rows-i; space++)
-			printf("  ");
-		for(j=0; j <= i; j++){
-			if (j==0 || i==0)
-				coef = 1;
-			else
-				coef = coef*(i-j+1)/j;
-			printf("%4d", coef);
-		}
-		printf("\n");
-	}
-return 0;
+#include <stdlib.h>
+int main()
+{
+    int nrow,cnt,i=0,j=0,k=0;
+    printf("Enter the no of rows in pascal that you want?");
+    scanf("%d",&nrow);
+    for(i=1;i<=nrow;i++)
+    {
+        for(j=0;j<nrow-i;j++)
+        {
+            printf(" ");
+        }
+        if(j==nrow-1){
+            printf("1 \n");    
+            }
+        else{
+            for(k=j;k<nrow-1;k++)
+            {
+                if(k==j)
+                printf("1 ");
+                if(k>j)
+                {
+                    printf("%d ",nrow-j-1);
+                }
+            }
+            
+           if(k==nrow-1)
+             {printf("1 \n");} 
+        }
+        
+        
+    }
 }
